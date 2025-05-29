@@ -243,6 +243,9 @@ app_license = "mit"
 # }
 
 
+# hooks.py (add to your custom app)
+
+# Export Client Scripts and Custom Fields and Custom DocTypes relevant to ESG carbon calculations
 fixtures = [
     {
         "dt": "Client Script",
@@ -320,6 +323,11 @@ fixtures = [
                 "custom_carbon_emission_factor_kg_co2e_per_unit"
             ]]
         ]
+    },
+    {
+        "dt": "DocType",
+        "filters": [
+            ["module", "=", "ESG Compliance"]
+        ]
     }
 ]
-
