@@ -262,7 +262,10 @@ esg_doctypes = [
             {"fieldname": "verification_status", "label": "Verification Status", "fieldtype": "Select", "options": "Pending\nVerified\nRejected", "default": "Pending", "idx": 23},
             {"fieldname": "section_break_3", "fieldtype": "Section Break", "label": "Comments & Attachments", "idx": 24},
             {"fieldname": "remarks", "label": "Remarks", "fieldtype": "Text", "idx": 25},
-            {"fieldname": "attachments", "label": "Supporting Documents", "fieldtype": "Table", "options": "ESG Document", "idx": 26}
+            {"fieldname": "attachments", "label": "Supporting Documents", "fieldtype": "Table", "options": "ESG Document", "idx": 26},
+            {"fieldname": "section_break_party", "fieldtype": "Section Break", "label": "Party Information", "insert_after": "company"},
+            {"fieldname": "party_type", "label": "Party Type", "fieldtype": "Select", "options": "\nCustomer\nSupplier\nEmployee", "insert_after": "section_break_party"},
+            {"fieldname": "party", "label": "Party", "fieldtype": "Dynamic Link", "options": "party_type", "insert_after": "party_type"}
         ],
         "permissions": [
             {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "submit": 1, "cancel": 1, "idx": 1},
@@ -311,8 +314,6 @@ esg_doctypes = [
             {"fieldname": "attached_documents", "label": "Supporting Documents", "fieldtype": "Table", "options": "ESG Document", "idx": 28},
             {"fieldname": "column_break_3", "fieldtype": "Column Break", "idx": 29},
             {"fieldname": "prepared_by", "label": "Prepared By", "fieldtype": "Link", "options": "Employee", "reqd": 1, "idx": 30},
-            # Continue from where the document left off - Complete ESG Compliance Report and remaining components
-
             {"fieldname": "reviewed_by", "label": "Reviewed By", "fieldtype": "Link", "options": "Employee", "idx": 31},
             {"fieldname": "approved_by", "label": "Approved By", "fieldtype": "Link", "options": "Employee", "idx": 32},
             {"fieldname": "approval_date", "label": "Approval Date", "fieldtype": "Date", "idx": 33}

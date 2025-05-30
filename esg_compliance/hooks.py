@@ -137,13 +137,32 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+    "Sales Invoice": {
+        "on_submit": "esg_compliance.api.create_esg_metric_entry",
+        "on_cancel": "esg_compliance.api.delete_esg_metric_entry"
+    },
+    "Purchase Invoice": {
+        "on_submit": "esg_compliance.api.create_purchase_esg_metric_entry",
+        "on_cancel": "esg_compliance.api.delete_esg_metric_entry"
+    },
+    "Stock Entry": {
+        "on_submit": "esg_compliance.api.create_stock_esg_metric_entry",
+        "on_cancel": "esg_compliance.api.delete_esg_metric_entry"
+    },
+    "Work Order": {
+        "on_submit": "esg_compliance.api.create_workorder_esg_metric_entry",
+        "on_cancel": "esg_compliance.api.delete_esg_metric_entry"
+    },
+    "Production Plan": {
+        "on_submit": "esg_compliance.api.create_production_plan_esg_metric_entry",
+        "on_cancel": "esg_compliance.api.delete_esg_metric_entry"
+    },
+    "Delivery Note": {
+        "on_submit": "esg_compliance.api.create_delivery_esg_metric_entry",
+        "on_cancel": "esg_compliance.api.delete_esg_metric_entry"
+    }
+}
 
 # Scheduled Tasks
 # ---------------

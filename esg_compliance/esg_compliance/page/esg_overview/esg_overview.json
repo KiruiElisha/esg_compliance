@@ -1,0 +1,24 @@
+{
+ "content": null,
+ "creation": "2025-05-29 07:14:54.921310",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "esg",
+ "idx": 0,
+ "modified": "2025-05-29 07:14:54.921310",
+ "modified_by": "Administrator",
+ "module": "ESG Compliance",
+ "name": "esg-overview",
+ "owner": "Administrator",
+ "page_name": "esg-overview",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "ESG Overview"
+}
