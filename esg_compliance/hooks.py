@@ -269,77 +269,23 @@ fixtures = [
     {
         "dt": "Client Script",
         "filters": [
-            ["name", "in", [
-                # Existing scripts
-                "Work Order Emissions Calculation",
-                "Stock Entry Carbon Impact Calculation",
-                # New script names
-                "Item Carbon Management",
-                "Work Order Carbon Tracking",
-                "Production Plan Carbon Estimation",
-                "Stock Entry Carbon Calculation",
-                "Delivery Note Carbon Calculation",
-                "Carbon Calculation",
-                "Calculate ESG"
-            ]]
+            ["module", "=", "ESG Compliance"]
         ]
     },
     {
         "dt": "Custom Field",
         "filters": [
-            ["fieldname", "in", [
-                # Company Multipliers & ESG Config
-                "custom_subcontractor_multiplier",
-                "custom_repack_multiplier",
-                "custom_manufacture_multiplier",
-                "custom_material_transfer_multiplier",
-                "custom_material_receipt_multiplier",
-                "custom_material_issue_multiplier",
-                "custom_manufacturing_overhead_percentage",
-                "custom_baseline_emissions_tonnes_co2e",
-                "custom_baseline_year",
-                "custom_annual_emission_reduction_target_",
-                "custom_net_zero_target_year",
-                "custom_carbon_emission_targets",
-                # Customer Preferences
-                "custom_carbon_offset_preference",
-                "custom_requires_carbon_footprint_reporting",
-                "custom_sustainability_focused_customer",
-                # Supplier Profiles
-                "custom_annual_carbon_emissions_tonnes_co2e",
-                "custom_carbon_intensity_rating",
-                "custom_certificate_expiry_date",
-                "custom_carbon_certification_type",
-                "custom_carbon_certified",
-                # Work Order Emissions
-                "custom_raw_material_emissions_kg_co2e",
-                "custom_manufacturing_process_emissions_kg_co2e",
-                "custom_total_work_order_emissions_kg_co2e",
-                # Production Plan
-                "custom_carbon_reduction_target_",
-                "custom_estimated_carbon_emissions_kg_co2e",
-                # Stock Entry Impacts
-                "custom_carbon_impact_kg_co2e",
-                "custom_total_carbon_impact_kg_co2e",
-                # Purchase & Delivery
-                "custom_carbon_emissions_kg_co2e",
-                "custom_total_delivery_emissions_kg_co2e",
-                "custom_transport_carbon_emissions_kg_co2e",
-                # Purchase Invoice
-                "custom_carbon_certificate_number",
-                "custom_supplier_is_carbon_certified",
-                "custom_total_carbon_emissions_kg_co2e",
-                # Sales Invoice
-                "custom_carbon_offset_cost",
-                "custom_carbon_offset_required",
-                "custom_total_carbon_emissions_kg_co2e",
-                "custom_carbon_emissions_impact",
-                # Item Master ESG
-                "custom_emission_factor_last_updated",
-                "custom_calculation_method",
-                "custom_carbon_scope",
-                "custom_emission_source",
-                "custom_carbon_emission_factor_kg_co2e_per_unit"
+            ["dt", "in", [
+                "Company",
+                "Customer",
+                "Supplier",
+                "Work Order", 
+                "Production Plan",
+                "Stock Entry",
+                "Delivery Note",
+                "Purchase Invoice",
+                "Sales Invoice",
+                "Item"
             ]]
         ]
     },
