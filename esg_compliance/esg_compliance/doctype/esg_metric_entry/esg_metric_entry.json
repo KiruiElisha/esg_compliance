@@ -1,0 +1,231 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2026-01-22 12:00:03.704205",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details_section",
+  "metric",
+  "company",
+  "reporting_period",
+  "period_from",
+  "period_to",
+  "column_break_rqin",
+  "value",
+  "source_doctype",
+  "source_document",
+  "entry_date",
+  "party_type",
+  "party",
+  "measurement_data_section",
+  "measured_value",
+  "target_value",
+  "unit",
+  "column_break_ivor",
+  "variance",
+  "variance_",
+  "performance",
+  "validation",
+  "data_source",
+  "column_break_xnss",
+  "verified_by",
+  "verification_date",
+  "verification_status",
+  "comments",
+  "remarks",
+  "supporting_documents"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "metric",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ESG Metric",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "reporting_period",
+   "fieldtype": "Date",
+   "label": "Reporting Period",
+   "options": "Daily\nWeekly\nMonthly\nQuarterly\nAnnually"
+  },
+  {
+   "fieldname": "period_from",
+   "fieldtype": "Date",
+   "label": "Period From"
+  },
+  {
+   "fieldname": "period_to",
+   "fieldtype": "Date",
+   "label": "Period To"
+  },
+  {
+   "fieldname": "column_break_rqin",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source_doctype",
+   "fieldtype": "Select",
+   "label": "Source DocType",
+   "options": "\nPurchase Invoice\nSales Invoice\nStock Entry\nDelivery Note\nPurchase Receipt\nWork Order\nProduction Plan"
+  },
+  {
+   "fieldname": "source_document",
+   "fieldtype": "Dynamic Link",
+   "label": "Source Document",
+   "options": "source_doctype"
+  },
+  {
+   "fieldname": "entry_date",
+   "fieldtype": "Data",
+   "label": "Entry Date"
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Data",
+   "label": "Party Type"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Data",
+   "label": "Party"
+  },
+  {
+   "fieldname": "measurement_data_section",
+   "fieldtype": "Section Break",
+   "label": "Measurement Data"
+  },
+  {
+   "fieldname": "measured_value",
+   "fieldtype": "Data",
+   "label": "Measured Value"
+  },
+  {
+   "fetch_from": "metric.target_value",
+   "fieldname": "target_value",
+   "fieldtype": "Data",
+   "label": "Target Value"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "label": "Unit"
+  },
+  {
+   "fieldname": "column_break_ivor",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "variance",
+   "fieldtype": "Data",
+   "label": "Variance"
+  },
+  {
+   "fieldname": "variance_",
+   "fieldtype": "Data",
+   "label": "Variance %"
+  },
+  {
+   "fieldname": "performance",
+   "fieldtype": "Select",
+   "label": "Performance",
+   "options": "Green\nYellow\nRed"
+  },
+  {
+   "fieldname": "validation",
+   "fieldtype": "Section Break",
+   "label": "Data Source & Validation"
+  },
+  {
+   "fieldname": "data_source",
+   "fieldtype": "Select",
+   "label": "Data Source",
+   "options": "Manual Entry\nSystem Generated\nImported\nCalculated"
+  },
+  {
+   "fieldname": "column_break_xnss",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "label": "Verified By",
+   "options": "User"
+  },
+  {
+   "fieldname": "verification_date",
+   "fieldtype": "Data",
+   "label": "Verification Date"
+  },
+  {
+   "fieldname": "verification_status",
+   "fieldtype": "Select",
+   "label": "Verification Status",
+   "options": "Pending\nVerified\nRejected"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Section Break",
+   "label": "Comments & Attachments"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "supporting_documents",
+   "fieldtype": "Table",
+   "label": "Supporting Documents",
+   "options": "ESG Document"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-22 12:11:01.936130",
+ "modified_by": "Administrator",
+ "module": "ESG Compliance",
+ "name": "ESG Metric Entry",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-22 12:00:04.671614",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "objective",
+  "kpi",
+  "target_value",
+  "achieved_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "objective",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Objective",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kpi",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "KPI",
+   "options": "ESG Metric"
+  },
+  {
+   "fieldname": "target_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Target Value"
+  },
+  {
+   "fieldname": "achieved_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Achieved Value"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-22 12:18:56.668776",
+ "modified_by": "Administrator",
+ "module": "ESG Compliance",
+ "name": "ESG Initiative Objective",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

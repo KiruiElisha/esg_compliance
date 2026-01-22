@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-22 12:00:05.838304",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "metric",
+  "data_accuracy",
+  "completeness"
+ ],
+ "fields": [
+  {
+   "fieldname": "metric",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "ESG Metric",
+   "options": "ESG Metric",
+   "reqd": 1
+  },
+  {
+   "fieldname": "data_accuracy",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Data Accuracy",
+   "options": "Accurate\nMinor Issues\nMajor Issues\nInaccurate"
+  },
+  {
+   "fieldname": "completeness",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Data Completeness"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-22 12:08:05.587361",
+ "modified_by": "Administrator",
+ "module": "ESG Compliance",
+ "name": "ESG Audit Metric",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

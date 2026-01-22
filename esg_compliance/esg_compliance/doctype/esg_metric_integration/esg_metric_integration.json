@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-22 12:00:04.906768",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "source_doctype",
+  "source_field",
+  "calculation_method",
+  "column_break_akwz",
+  "filter_conditions"
+ ],
+ "fields": [
+  {
+   "fieldname": "source_doctype",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Source DocType",
+   "options": "Purchase Invoice\nSales Invoice\nStock Entry\nDelivery Note\nPurchase Receipt\nPayroll Entry\nAttendance\nEmployee\nCustomer\nSupplier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source_field",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Source Field"
+  },
+  {
+   "default": "Sum",
+   "fieldname": "calculation_method",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Calculation",
+   "options": "Sum\nAverage\nCount\nMax\nMin\nCustom Formula"
+  },
+  {
+   "fieldname": "column_break_akwz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "filter_conditions",
+   "fieldtype": "Code",
+   "label": "Filter Conditions"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-22 12:17:44.727096",
+ "modified_by": "Administrator",
+ "module": "ESG Compliance",
+ "name": "ESG Metric Integration",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

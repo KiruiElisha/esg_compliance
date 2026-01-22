@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-22 12:00:06.266469",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "metric",
+  "card_title",
+  "display_order",
+  "show_trend"
+ ],
+ "fields": [
+  {
+   "fieldname": "metric",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "ESG Metric",
+   "options": "ESG Metric",
+   "reqd": 1
+  },
+  {
+   "fieldname": "card_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Card Title"
+  },
+  {
+   "fieldname": "display_order",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Display Order"
+  },
+  {
+   "default": "1",
+   "fieldname": "show_trend",
+   "fieldtype": "Check",
+   "label": "Show Trend"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-22 12:04:32.362837",
+ "modified_by": "Administrator",
+ "module": "ESG Compliance",
+ "name": "ESG KPI Card",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

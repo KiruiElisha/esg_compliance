@@ -1,0 +1,181 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ESG-AUD-{YYYY}-{#####}",
+ "creation": "2026-01-22 12:00:06.498121",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_esjw",
+  "audit_name",
+  "company",
+  "audit_type",
+  "column_break_xfbc",
+  "audit_date",
+  "status",
+  "lead_auditor",
+  "section_break_hcfc",
+  "audit_scope",
+  "policies_under_review",
+  "metrics_under_review",
+  "esg_audit_team",
+  "external_auditor",
+  "findings_and_observations_section",
+  "overall_rating",
+  "recommendations",
+  "audit_findings",
+  "corrective_actions",
+  "next_audit_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_esjw",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "audit_name",
+   "fieldtype": "Data",
+   "label": "Audit Name"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "audit_type",
+   "fieldtype": "Select",
+   "label": "Audit Type",
+   "options": "Internal\nExternal\nCertification\nRegulatory"
+  },
+  {
+   "fieldname": "column_break_xfbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "audit_date",
+   "fieldtype": "Date",
+   "label": "Audit Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Planned\nOngoing\nCompleted\nReporting"
+  },
+  {
+   "fieldname": "lead_auditor",
+   "fieldtype": "Link",
+   "label": "Lead Auditor",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_break_hcfc",
+   "fieldtype": "Section Break",
+   "label": "Audit Scope"
+  },
+  {
+   "fieldname": "audit_scope",
+   "fieldtype": "Text Editor",
+   "label": "Audit Scope"
+  },
+  {
+   "fieldname": "policies_under_review",
+   "fieldtype": "Table",
+   "label": "Policies Under Review",
+   "options": "ESG Audit Policy"
+  },
+  {
+   "fieldname": "metrics_under_review",
+   "fieldtype": "Table",
+   "label": "Metrics Under Review",
+   "options": "ESG Audit Metric"
+  },
+  {
+   "fieldname": "esg_audit_team",
+   "fieldtype": "Table",
+   "label": "ESG Audit Team",
+   "options": "ESG Audit Team"
+  },
+  {
+   "fieldname": "external_auditor",
+   "fieldtype": "Data",
+   "label": "External Auditor"
+  },
+  {
+   "fieldname": "findings_and_observations_section",
+   "fieldtype": "Section Break",
+   "label": "Findings and Observations"
+  },
+  {
+   "fieldname": "overall_rating",
+   "fieldtype": "Select",
+   "label": "Overall Rating",
+   "options": "Excellent\nGood\nSatisfactory\nNeeds Improvement\nPoor"
+  },
+  {
+   "fieldname": "recommendations",
+   "fieldtype": "Text Editor",
+   "label": "Recommendations"
+  },
+  {
+   "fieldname": "audit_findings",
+   "fieldtype": "Table",
+   "label": "Audit Findings",
+   "options": "ESG Audit Finding"
+  },
+  {
+   "fieldname": "corrective_actions",
+   "fieldtype": "Table",
+   "label": "Corrective Actions",
+   "options": "ESG Corrective Action"
+  },
+  {
+   "fieldname": "next_audit_date",
+   "fieldtype": "Date",
+   "label": "Next Audit Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "ESG Audit",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-01-22 12:02:48.142670",
+ "modified_by": "Administrator",
+ "module": "ESG Compliance",
+ "name": "ESG Audit",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

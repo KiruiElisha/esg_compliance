@@ -8,18 +8,18 @@ app_license = "mit"
 # Apps
 # ------------------
 
-# required_apps = []
+required_apps = ["erpnext"]
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "esg_compliance",
-# 		"logo": "/assets/esg_compliance/logo.png",
-# 		"title": "ESG Compliance",
-# 		"route": "/esg_compliance",
-# 		"has_permission": "esg_compliance.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "esg_compliance",
+		"logo": "/public/esg.png",
+		"title": "ESG Compliance",
+		"route": "/esg_overview",
+		#"has_permission": "esg_compliance.api.permission.has_app_permission"
+	}
+]
 
 # Includes in <head>
 # ------------------
